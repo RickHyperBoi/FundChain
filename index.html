@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" className="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FundChain | Web3 Crowdfunding Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              slate: {
+                950: '#0b0f19',
+                900: '#111827',
+                850: '#151d30',
+                800: '#1f2937',
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body className="bg-[#0b0f19] text-slate-100 min-h-screen antialiased selection:bg-indigo-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
